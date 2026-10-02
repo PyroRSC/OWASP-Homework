@@ -242,12 +242,12 @@
           },
           {
             "position": {
-              "x": 470,
-              "y": 40
+              "x": 460,
+              "y": 70
             },
             "size": {
-              "width": 140,
-              "height": 140
+              "width": 160,
+              "height": 80
             },
             "attrs": {
               "text": {
@@ -260,22 +260,19 @@
               }
             },
             "visible": true,
-            "shape": "process",
+            "shape": "actor",
             "zIndex": 6,
             "id": "b50d9071-117b-5190-9322-54a86fad3b15",
             "data": {
-              "type": "tm.Process",
+              "type": "tm.Actor",
               "name": "Authorization Provider",
               "description": "",
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
-              "threats": [],
-              "handlesCardPayment": false,
-              "handlesGoodsOrServices": false,
-              "isWebApplication": false,
-              "privilegeLevel": ""
+              "providesAuthentication": true,
+              "threats": []
             }
           },
           {
