@@ -20,214 +20,152 @@
         "version": "2.6.2",
         "cells": [
           {
-            "shape": "trust-boundary-curve",
+            "position": {
+              "x": 0,
+              "y": 440
+            },
+            "size": {
+              "width": 260,
+              "height": 240
+            },
             "attrs": {
-              "line": {
-                "targetMarker": "",
-                "sourceMarker": ""
+              "text": {
+                "text": "Internet Boundary",
+                "refX": 12,
+                "refY": 12,
+                "textAnchor": "start",
+                "textVerticalAnchor": "top"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 3,
+                "strokeDasharray": "10 5",
+                "fill": "transparent",
+                "fillOpacity": 0
               }
             },
-            "width": 200,
-            "height": 100,
-            "zIndex": 1,
-            "labels": [
-              {
-                "markup": [
-                  {
-                    "tagName": "ellipse",
-                    "selector": "labelBody"
-                  },
-                  {
-                    "tagName": "text",
-                    "selector": "labelText"
-                  }
-                ],
-                "attrs": {
-                  "labelText": {
-                    "text": "Internet Boundary",
-                    "textAnchor": "middle",
-                    "textVerticalAnchor": "middle"
-                  },
-                  "labelBody": {
-                    "ref": "labelText",
-                    "refRx": "50%",
-                    "refRy": "60%",
-                    "fill": "#fff",
-                    "strokeWidth": 0
-                  }
-                },
-                "position": {
-                  "distance": 0.15,
-                  "args": {
-                    "keepGradient": true,
-                    "ensureLegibility": true
-                  }
-                }
-              }
-            ],
-            "connector": "smooth",
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "zIndex": -1,
+            "id": "3250464a-a912-57a7-80b6-46ac2b94ba59",
             "data": {
-              "type": "tm.Boundary",
+              "type": "tm.BoundaryBox",
               "name": "Internet Boundary",
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false
-            },
-            "id": "3250464a-a912-57a7-80b6-46ac2b94ba59",
-            "source": {
-              "x": 330,
-              "y": 400
-            },
-            "target": {
-              "x": 330,
-              "y": 780
-            },
-            "vertices": [
-              {
-                "x": 310,
-                "y": 590
-              }
-            ]
+            }
           },
           {
-            "shape": "trust-boundary-curve",
+            "position": {
+              "x": 420,
+              "y": 0
+            },
+            "size": {
+              "width": 240,
+              "height": 220
+            },
             "attrs": {
-              "line": {
-                "targetMarker": "",
-                "sourceMarker": ""
+              "text": {
+                "text": "Auth Service Boundary",
+                "refX": 12,
+                "refY": 12,
+                "textAnchor": "start",
+                "textVerticalAnchor": "top"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 3,
+                "strokeDasharray": "10 5",
+                "fill": "transparent",
+                "fillOpacity": 0
               }
             },
-            "width": 200,
-            "height": 100,
-            "zIndex": 2,
-            "labels": [
-              {
-                "markup": [
-                  {
-                    "tagName": "ellipse",
-                    "selector": "labelBody"
-                  },
-                  {
-                    "tagName": "text",
-                    "selector": "labelText"
-                  }
-                ],
-                "attrs": {
-                  "labelText": {
-                    "text": "Auth Service Boundary",
-                    "textAnchor": "middle",
-                    "textVerticalAnchor": "middle"
-                  },
-                  "labelBody": {
-                    "ref": "labelText",
-                    "refRx": "50%",
-                    "refRy": "60%",
-                    "fill": "#fff",
-                    "strokeWidth": 0
-                  }
-                },
-                "position": {
-                  "distance": 0.15,
-                  "args": {
-                    "keepGradient": true,
-                    "ensureLegibility": true
-                  }
-                }
-              }
-            ],
-            "connector": "smooth",
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "zIndex": -1,
+            "id": "ae109acc-5e9f-5fc3-a4c4-cc4328338360",
             "data": {
-              "type": "tm.Boundary",
+              "type": "tm.BoundaryBox",
               "name": "Auth Service Boundary",
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false
-            },
-            "id": "ae109acc-5e9f-5fc3-a4c4-cc4328338360",
-            "source": {
-              "x": 300,
-              "y": 330
-            },
-            "target": {
-              "x": 770,
-              "y": 330
-            },
-            "vertices": [
-              {
-                "x": 540,
-                "y": 370
-              }
-            ]
+            }
           },
           {
-            "shape": "trust-boundary-curve",
+            "position": {
+              "x": 850,
+              "y": 0
+            },
+            "size": {
+              "width": 260,
+              "height": 680
+            },
             "attrs": {
-              "line": {
-                "targetMarker": "",
-                "sourceMarker": ""
+              "text": {
+                "text": "Data Tier Boundary",
+                "refX": 12,
+                "refY": 12,
+                "textAnchor": "start",
+                "textVerticalAnchor": "top"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 3,
+                "strokeDasharray": "10 5",
+                "fill": "transparent",
+                "fillOpacity": 0
               }
             },
-            "width": 200,
-            "height": 100,
-            "zIndex": 3,
-            "labels": [
-              {
-                "markup": [
-                  {
-                    "tagName": "ellipse",
-                    "selector": "labelBody"
-                  },
-                  {
-                    "tagName": "text",
-                    "selector": "labelText"
-                  }
-                ],
-                "attrs": {
-                  "labelText": {
-                    "text": "Data Tier Boundary",
-                    "textAnchor": "middle",
-                    "textVerticalAnchor": "middle"
-                  },
-                  "labelBody": {
-                    "ref": "labelText",
-                    "refRx": "50%",
-                    "refRy": "60%",
-                    "fill": "#fff",
-                    "strokeWidth": 0
-                  }
-                },
-                "position": {
-                  "distance": 0.15,
-                  "args": {
-                    "keepGradient": true,
-                    "ensureLegibility": true
-                  }
-                }
-              }
-            ],
-            "connector": "smooth",
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "zIndex": -1,
+            "id": "9138886e-adda-5a69-aec4-bd4f615d6c10",
             "data": {
-              "type": "tm.Boundary",
+              "type": "tm.BoundaryBox",
               "name": "Data Tier Boundary",
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 420,
+              "y": 440
             },
-            "id": "9138886e-adda-5a69-aec4-bd4f615d6c10",
-            "source": {
-              "x": 810,
-              "y": 20
+            "size": {
+              "width": 240,
+              "height": 240
             },
-            "target": {
-              "x": 810,
-              "y": 780
-            },
-            "vertices": [
-              {
-                "x": 790,
-                "y": 400
+            "attrs": {
+              "text": {
+                "text": "Web Application Boundary",
+                "refX": 12,
+                "refY": 12,
+                "textAnchor": "start",
+                "textVerticalAnchor": "top"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 3,
+                "strokeDasharray": "10 5",
+                "fill": "transparent",
+                "fillOpacity": 0
               }
-            ]
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "zIndex": -1,
+            "id": "b932d2fc-8c22-4eca-9d9c-00f46096c887",
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Web Application Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
           },
           {
             "position": {
