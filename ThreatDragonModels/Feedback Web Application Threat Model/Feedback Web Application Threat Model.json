@@ -439,7 +439,7 @@
                 {
                   "id": "e087e073-ae99-4b68-a643-288537f4013f",
                   "title": "Missing Web Application Logging",
-                  "status": "N/A",
+                  "status": "NotApplicable",
                   "severity": "TBD",
                   "type": "Repudiation",
                   "description": "The web application claims that it did not receive data from a process on the other side of the trust boundary.",
@@ -457,7 +457,7 @@
               "threatFrequency": {
                 "spoofing": 1,
                 "tampering": 0,
-                "repudiation": 0,
+                "repudiation": 1,
                 "informationDisclosure": 0,
                 "denialOfService": 0,
                 "elevationOfPrivilege": 0
