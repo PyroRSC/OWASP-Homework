@@ -323,7 +323,7 @@
                 "text": "Web Application"
               },
               "body": {
-                "stroke": "red",
+                "stroke": "#333333",
                 "strokeWidth": 1.5,
                 "strokeDasharray": null
               }
@@ -421,12 +421,12 @@
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "threats": [
                 {
                   "id": "ef33887b-e1e6-41be-a16c-7894ac0cdd86",
                   "title": "Web Application Spoofing",
-                  "status": "N/A",
+                  "status": "NotApplicable",
                   "severity": "TBD",
                   "type": "Spoofing",
                   "description": "The web application may be spoofed by an attacker and this may lead to unauthorized access to the browser client.",
@@ -453,7 +453,15 @@
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": true,
-              "privilegeLevel": ""
+              "privilegeLevel": "",
+              "threatFrequency": {
+                "spoofing": 1,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
             }
           },
           {
@@ -587,14 +595,14 @@
                 "text": "LDAP"
               },
               "topLine": {
+                "stroke": "red",
                 "strokeWidth": 1.5,
-                "strokeDasharray": null,
-                "stroke": "red"
+                "strokeDasharray": null
               },
               "bottomLine": {
+                "stroke": "red",
                 "strokeWidth": 1.5,
-                "strokeDasharray": null,
-                "stroke": "red"
+                "strokeDasharray": null
               }
             },
             "visible": true,
@@ -752,14 +760,14 @@
                 "text": "SQL Database"
               },
               "topLine": {
+                "stroke": "red",
                 "strokeWidth": 1.5,
-                "strokeDasharray": null,
-                "stroke": "red"
+                "strokeDasharray": null
               },
               "bottomLine": {
+                "stroke": "red",
                 "strokeWidth": 1.5,
-                "strokeDasharray": null,
-                "stroke": "red"
+                "strokeDasharray": null
               }
             },
             "visible": true,
