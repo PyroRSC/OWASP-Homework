@@ -38,6 +38,9 @@
               },
               "body": {
                 "stroke": "#333333"
+              },
+              "label": {
+                "text": "Internet Boundary"
               }
             },
             "visible": true,
@@ -122,6 +125,9 @@
               },
               "body": {
                 "stroke": "#333333"
+              },
+              "label": {
+                "text": "Data Tier Boundary"
               }
             },
             "visible": true,
@@ -165,6 +171,9 @@
               },
               "body": {
                 "stroke": "#333333"
+              },
+              "label": {
+                "text": "Web Application Boundary"
               }
             },
             "visible": true,
@@ -595,12 +604,10 @@
                 "text": "LDAP"
               },
               "topLine": {
-                "stroke": "red",
                 "strokeWidth": 1.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "stroke": "red",
                 "strokeWidth": 1.5,
                 "strokeDasharray": null
               }
@@ -698,12 +705,12 @@
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "threats": [
                 {
                   "id": "6e488a75-d772-420a-a18c-e1ed357fa507",
                   "title": "LDAP Injection",
-                  "status": "N/A",
+                  "status": "NotApplicable",
                   "severity": "TBD",
                   "type": "Tampering",
                   "description": "LDAP injection is possible, as the user authentication is verified using an LDAP query.",
@@ -716,7 +723,7 @@
                 {
                   "id": "6ecbb19b-8bad-45da-b5d6-8c6ec34d4be1",
                   "title": "Missing LDAP Write Logging",
-                  "status": "N/A",
+                  "status": "NotApplicable",
                   "severity": "TBD",
                   "type": "Repudiation",
                   "description": "LDAP claims that it did not write data received from an entity on the other side of the trust boundary.",
@@ -729,7 +736,7 @@
                 {
                   "id": "e8128042-8280-437f-89f0-b54cd17b6ed6",
                   "title": "Unauthorized Data Access in LDAP Directory",
-                  "status": "N/A",
+                  "status": "NotApplicable",
                   "severity": "TBD",
                   "type": "Information disclosure",
                   "description": "Improper data protection of LDAP can allow an attacker to read information not intended for disclosure.",
@@ -743,7 +750,13 @@
               "isALog": false,
               "storesCredentials": true,
               "isEncrypted": false,
-              "isSigned": false
+              "isSigned": false,
+              "threatFrequency": {
+                "tampering": 1,
+                "repudiation": 1,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
             }
           },
           {
@@ -760,12 +773,10 @@
                 "text": "SQL Database"
               },
               "topLine": {
-                "stroke": "red",
                 "strokeWidth": 1.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "stroke": "red",
                 "strokeWidth": 1.5,
                 "strokeDasharray": null
               }
@@ -863,12 +874,12 @@
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "threats": [
                 {
                   "id": "fead275a-100a-49af-8864-ebebb3e5edd4",
                   "title": "Malicious SQL Code Injection",
-                  "status": "N/A",
+                  "status": "NotApplicable",
                   "severity": "TBD",
                   "type": "Tampering",
                   "description": "SQL injection is an attack in which malicious code is inserted into strings that are later passed to an instance of SQL Server for parsing and execution.",
@@ -881,7 +892,7 @@
                 {
                   "id": "c7bb0dcd-5e86-4993-93e5-75252b310571",
                   "title": "Unverified SQL Database Data Writes",
-                  "status": "N/A",
+                  "status": "NotApplicable",
                   "severity": "TBD",
                   "type": "Repudiation",
                   "description": "The SQL Database claims that it did not write data received from an entity on the other side of the trust boundary.",
@@ -895,7 +906,13 @@
               "isALog": false,
               "storesCredentials": false,
               "isEncrypted": false,
-              "isSigned": false
+              "isSigned": false,
+              "threatFrequency": {
+                "tampering": 1,
+                "repudiation": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
             }
           },
           {
@@ -1078,7 +1095,7 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "red",
+                "stroke": "#333333",
                 "targetMarker": {
                   "name": "block"
                 },
@@ -1099,7 +1116,7 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": true,
@@ -1108,7 +1125,7 @@
                 {
                   "id": "66a884bf-4aa9-474a-a2c8-3157c7e41e6a",
                   "title": "Feedback Data Tampering",
-                  "status": "N/A",
+                  "status": "NotApplicable",
                   "severity": "TBD",
                   "type": "Tampering",
                   "description": "Data flowing across saved feedback comments may be tampered with by an attacker. Failure to verify that input is as expected is a root cause of a very large number of exploitable issues.",
@@ -1121,7 +1138,7 @@
                 {
                   "id": "1cfc62db-6c91-4b8f-b21e-09e820aa6123",
                   "title": "Sensitive Feedback Data Disclosure",
-                  "status": "N/A",
+                  "status": "NotApplicable",
                   "severity": "TBD",
                   "type": "Information disclosure",
                   "description": "Data flowing across saved feedback comments may be sniffed by an attacker. Depending on what type of data an attacker can read, it may be used to attack other parts of the system or simply be a disclosure of information leading to compliance violations.",
@@ -1135,45 +1152,15 @@
               "trustBoundaryIds": [
                 "3250464a-a912-57a7-80b6-46ac2b94ba59",
                 "b932d2fc-8c22-4eca-9d9c-00f46096c887"
-              ]
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
             },
             "labels": [
-              {
-                "attrs": {
-                  "label": {
-                    "text": "Data Flow"
-                  },
-                  "labelText": {
-                    "text": "Insert Feedback Comments",
-                    "textAnchor": "middle",
-                    "textVerticalAnchor": "middle"
-                  },
-                  "labelBody": {
-                    "ref": "labelText",
-                    "refRx": "50%",
-                    "refRy": "60%",
-                    "fill": "#fff",
-                    "strokeWidth": 0
-                  }
-                },
-                "markup": [
-                  {
-                    "tagName": "ellipse",
-                    "selector": "labelBody"
-                  },
-                  {
-                    "tagName": "text",
-                    "selector": "labelText"
-                  }
-                ],
-                "position": {
-                  "distance": 0.5,
-                  "args": {
-                    "keepGradient": true,
-                    "ensureLegibility": true
-                  }
-                }
-              }
+              "Insert Feedback Comments"
             ],
             "id": "53ef9dda-34f3-5174-ad6a-da1e67da20f9",
             "source": {
@@ -1184,7 +1171,19 @@
             },
             "vertices": [
               {
+                "x": 230,
+                "y": 590
+              },
+              {
+                "x": 310,
+                "y": 590
+              },
+              {
                 "x": 340,
+                "y": 595
+              },
+              {
+                "x": 400,
                 "y": 595
               }
             ]
